@@ -61,7 +61,7 @@ T PriorityQueue<T>::poll()
 {
     if (_queue.empty())
     {
-        throw std::exception("PriorityQueue empty !");
+        throw std::out_of_range("PriorityQueue empty !");
     }
     T returnedVal = _queue.front();
     _queue.pop_front();
