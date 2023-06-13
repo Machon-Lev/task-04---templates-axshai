@@ -27,3 +27,5 @@ ostream& operator<< (ostream& os, Dog d);
 Dog operator-(const Dog& lhs, const Dog& rhs);
 
 bool operator<(const Dog& lhs, const int rhs);
+
+bool operator<(const Dog& lhs, const Dog& rhs);

@@ -19,3 +19,8 @@ bool operator<(const Dog& lhs, const int rhs)
 {
 	return lhs.getWeight() < rhs;
 }
+
+bool operator<(const Dog& lhs, const Dog& rhs)
+{
+	return lhs < rhs.getWeight();
+}
